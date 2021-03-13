@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_week">
+
+    <fragment
+        android:id="@+id/navigation_week"
+        android:name="com.example.stockchartsample.ui.line.WeekFragment"
+        android:label="@string/title_week"
+        tools:layout="@layout/fragment_line_chart" />
+
+    <fragment
+        android:id="@+id/navigation_month"
+        android:name="com.example.stockchartsample.ui.line.MonthFragment"
+        android:label="@string/title_month"
+        tools:layout="@layout/fragment_line_chart" />
+
+    <fragment
+        android:id="@+id/navigation_candle"
+        android:name="com.example.stockchartsample.ui.candle.CandleFragment"
+        android:label="@string/title_candlestick"
+        tools:layout="@layout/fragment_candle_chart" />
+</navigation>
